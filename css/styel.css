@@ -1,0 +1,489 @@
+body {
+  font-family: Montserrat sans-serif;
+}
+header {
+  height: 100vh;
+  background-image: linear-gradient(#000000d1, #0000005e), url(../imgs/bg.jpg);
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 50px;
+}
+#home > article > h2::after {
+  content: "|";
+  animation-name: textanmited;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+}
+#home > article > h2 {
+  font-size: 80px;
+}
+
+@keyframes textanmited {
+  0% {
+    content: "D|";
+  }
+  2% {
+    content: "De|";
+  }
+  4% {
+    content: "Dev|";
+  }
+  6% {
+    content: "Devo|";
+  }
+  8% {
+    content: "Devol|";
+  }
+  10% {
+    content: "Devolo|";
+  }
+  12% {
+    content: "Devolop|";
+  }
+  14% {
+    content: "Devolope|";
+  }
+  16% {
+    content: "Devoloper|";
+  }
+  18% {
+    content: "Devolope|";
+  }
+  20% {
+    content: "Devolop|";
+  }
+  22% {
+    content: "Devolo|";
+  }
+  24% {
+    content: "Devol|";
+  }
+  26% {
+    content: "Devo|";
+  }
+  28% {
+    content: "Dev|";
+  }
+  30% {
+    content: "De|";
+  }
+  32% {
+    content: "D|";
+  }
+  34% {
+    content: "De|";
+  }
+  36% {
+    content: "Des|";
+  }
+  38% {
+    content: "Desi|";
+  }
+  40% {
+    content: "Desig|";
+  }
+  42% {
+    content: "Design|";
+  }
+  44% {
+    content: "Designe|";
+  }
+  46% {
+    content: "Designer|";
+  }
+  48% {
+    content: "Designe|";
+  }
+  50% {
+    content: "Design|";
+  }
+  52% {
+    content: "Desig|";
+  }
+  54% {
+    content: "Desi|";
+  }
+  56% {
+    content: "Des|";
+  }
+  58% {
+    content: "De|";
+  }
+  60% {
+    content: "D|";
+  }
+  64% {
+    content: "F|";
+  }
+  66% {
+    content: "Fr|";
+  }
+  70% {
+    content: "Fre|";
+  }
+  75% {
+    content: "Free|";
+  }
+  80% {
+    content: "Freel|";
+  }
+  85% {
+    content: "Freela|";
+  }
+  90% {
+    content: "Freelan|";
+  }
+  95% {
+    content: "Freelanc|";
+  }
+  99% {
+    content: "Freelance|";
+  }
+  100% {
+    content: "D|";
+  }
+}
+
+.social-icons {
+  cursor: pointer;
+}
+.hero {
+  position: relative;
+}
+.dottedtimg {
+  position: absolute;
+  top: 23px;
+  left: 0px;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  width: 80%;
+  height: 100%;
+  background-image: url(../imgs/dots.png);
+  transform: translate(-7%);
+}
+.skills-progress {
+  height: 1.5rem;
+  box-shadow: 0px 1px 7px -2px rgb(0 0 0) inset;
+}
+.progress-par {
+  height: 1.5rem;
+}
+.w-90 {
+  width: 90%;
+}
+.w-95 {
+  width: 95%;
+}
+.w-80 {
+  width: 80%;
+}
+.btn-dark:hover {
+  color: black;
+  background-color: white;
+  border-color: var(--bs-btn-hover-border-color);
+}
+.btn-dark {
+  border: 1px solid black;
+  background-color: black;
+  padding: 10px 30px;
+}
+.btn-light {
+  border: 1px solid black;
+  background-color: rgb(255, 255, 255);
+  padding: 10px 30px;
+}
+.btn-light:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+  border-color: var(--bs-btn-hover-border-color);
+}
+#services > h1 {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+#services > h1::after {
+  position: absolute;
+  content: "";
+  bottom: 4%;
+  width: 100%;
+  height: 30%;
+  background-image: url(../imgs/dots.png);
+  transform: translateX(-150px);
+  z-index: -1;
+}
+.text-grey {
+  color: #f7f7f7;
+}
+
+#portofolio > h1 {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+#portofolio > h1::after {
+  position: absolute;
+  content: "";
+  bottom: 4%;
+  width: 100%;
+  height: 30%;
+  background-image: url(../imgs/dots.png);
+  transform: translateX(-150px);
+  z-index: -1;
+}
+.carousel-item img {
+  width: 100px;
+  height: 100px;
+}
+.carousel-indicators [data-bs-target] {
+  box-sizing: content-box;
+  flex: 0 1 auto;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  padding: 0;
+  margin-right: 3px;
+  margin-left: 3px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #000000;
+  background-clip: padding-box;
+  border: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  opacity: 0.5;
+  transition: opacity 0.6s ease;
+}
+.carousel-indicators [data-bs-target]:hover {
+  background-color: #9a9595;
+}
+.bg-grey {
+  background-color: #f7f7f7;
+}
+#testmonial > h1 {
+  position: relative;
+  display: inline-block;
+}
+#testmonial > h1::after {
+  position: absolute;
+  content: "";
+  bottom: 4%;
+  width: 100%;
+  height: 30%;
+  background-image: url(../imgs/dots.png);
+  left: 0;
+}
+.over-bg {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.845);
+  width: 99%;
+  height: 79%;
+  border: 2px solid #9a9595;
+  transform: rotateY(180deg) scale(0.5, 0.5);
+  transition: all 700ms;
+  opacity: 0;
+}
+.card > img {
+  transition: all 500ms;
+}
+.card:hover .over-bg {
+  opacity: 1;
+  transform: rotateY(0deg) scale(1, 1);
+}
+.card:hover > img {
+  transform: scale(1.1, 1.1);
+}
+.over-bg > span {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #000000;
+  text-align: center;
+  transition: all 200ms;
+}
+.over-bg > span:hover {
+  color: black;
+  background-color: #ffff;
+  border: 1px solid black;
+}
+
+#Our-Team > h1 {
+  position: relative;
+  display: inline-block;
+}
+#Our-Team > h1::after {
+  position: absolute;
+  content: "";
+  bottom: 4%;
+  width: 100%;
+  height: 30%;
+  background-image: url(../imgs/dots.png);
+  left: 0;
+}
+
+#Contact-Us > h1 {
+  position: relative;
+  display: inline-block;
+}
+#Contact-Us > h1::after {
+  position: absolute;
+  content: "";
+  bottom: 4%;
+  width: 100%;
+  height: 30%;
+  background-image: url(../imgs/dots.png);
+  left: 0;
+}
+.form-control:focus {
+  background-color: #f4f4f4;
+  border-color: #00000000;
+
+  box-shadow: 0 0 0 0 rgba(13, 110, 253, 0.25);
+}
+
+.form-control {
+  background-color: #f4f4f4;
+  border-color: #00000000;
+}
+
+.card-body > .fa-stack > .fa-laptop,
+.fa-bullhorn,
+.fa-umbrella,
+.fa-gem,
+.fa-television,
+.fa-camera {
+  color: #000000;
+  transition: all 500ms;
+}
+.card-body:hover .fa-laptop,
+.card-body:hover .fa-bullhorn,
+.card-body:hover .fa-umbrella,
+.card-body:hover .fa-gem,
+.card-body:hover .fa-television,
+.card-body:hover .fa-camera {
+  color: rgb(255, 255, 255);
+}
+.card-body .fa-solid {
+  transition: all 500ms;
+}
+.card-body:hover .fa-solid {
+  color: #000000;
+}
+.icon > .fa-stack > .fa-circle {
+  transition: all 500ms;
+}
+.icon:hover .fa-circle {
+  color: rgb(0, 0, 0);
+}
+.icon:hover .fa-location-arrow,
+.icon:hover .fa-envelope,
+.icon:hover .fa-phone {
+  color: rgb(255, 255, 255);
+}
+.bg-notdark {
+  background-color: #1c1c1c;
+}
+
+.navbar-nav > li > a {
+  margin: 0 !important;
+  color: #312f2f !important;
+
+  position: relative;
+  overflow: hidden;
+}
+
+.navbar-nav > li > a::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background: #000000;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.navbar-nav > li > a:hover::after {
+  width: 100%;
+}
+
+.overbg > .ic {
+  width: 30px;
+  height: 30px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  margin: 0 10px;
+  border: 1px solid black;
+}
+.overbg > .ic-m {
+  width: 30px;
+  height: 30px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  margin: 0 10px;
+  border: 1px solid black;
+}
+.overbg > .ic-m:hover,
+.overbg > .ic:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+.content:hover .overbg {
+  transform: translateY(-6px);
+  opacity: 1;
+}
+.content {
+  overflow: hidden;
+}
+.overbg {
+  transition: all 500ms;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(255, 255, 255);
+  width: 90%;
+  height: 90%;
+  opacity: 0;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #000000;
+  background-color: #00000000;
+  position: relative;
+}
+
+.nav-pills .nav-link.active::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: #000000;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: all 0.5s;
+  padding: 0;
+}
